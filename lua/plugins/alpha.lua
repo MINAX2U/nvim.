@@ -1,20 +1,9 @@
 return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
-    local logo = [[
-     ███▄ ▄███▓ ██▓ ███▄    █  ▄▄▄      ▒██   ██▒
-    ▓██▒▀█▀ ██▒▓██▒ ██ ▀█   █ ▒████▄    ▒▒ █ █ ▒░
-    ▓██    ▓██░▒██▒▓██  ▀█ ██▒▒██  ▀█▄  ░░  █   ░
-    ▒██    ▒██ ░██░▓██▒  ▐▌██▒░██▄▄▄▄██  ░ █ █ ▒ 
-    ▒██▒   ░██▒░██░▒██░   ▓██░ ▓█   ▓██▒▒██▒ ▒██▒
-    ░ ▒░   ░  ░░▓  ░ ▒░   ▒ ▒  ▒▒   ▓▒█░▒▒ ░ ░▓ ░
-    ░  ░      ░ ▒ ░░ ░░   ░ ▒░  ▒   ▒▒ ░░░   ░▒ ░
-    ░      ░    ▒ ░   ░   ░ ░   ░   ▒    ░    ░  
-           ░    ░           ░       ░  ░ ░    ░  
-                                                  
-
-                    [ @minax ]                             
+    local dashboard = [[
+    logo
     ]]
-    opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
+    opts.section.header.val = vim.split(dashboard, "\n", { trimempty = true })
   end,
 }
